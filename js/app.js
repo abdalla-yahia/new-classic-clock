@@ -95,13 +95,13 @@ function changeColor() {
 
 function changeBackground() {
   let images = [
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mexatk.com%2F%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-%25D8%25A7%25D8%25AD%25D9%2584%25D9%258A-%25D9%2588%25D8%25A7%25D8%25AC%25D9%2585%25D9%2584-%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-hd%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAD',
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fgfx4arab.com%2Fdownload%2Fmosque-%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25AC%25D8%25AF-%25D8%25AF%25D9%2582%25D8%25A9-%25D8%25B9%25D8%25A7%25D9%2584%25D9%258A%25D8%25A9-%25D8%25AC%25D9%2585%25D9%258A%25D9%2584-%25D8%25B1%25D8%25A7%25D8%25A6%25D8%25B9-%25D8%25AD%25D8%25AF%25D9%258A%25D8%25AB%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAc',
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mexatk.com%2F%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-%25D8%25A7%25D8%25AD%25D9%2584%25D9%258A-%25D9%2588%25D8%25A7%25D8%25AC%25D9%2585%25D9%2584-%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-hd%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAo',
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Far.wikipedia.org%2Fwiki%2F%25D9%2585%25D9%2584%25D9%2581%3AAl-Hakim_Mosque.jpg&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAu',
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mexatk.com%2F%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-%25D8%25A7%25D8%25AD%25D9%2584%25D9%258A-%25D9%2588%25D8%25A7%25D8%25AC%25D9%2585%25D9%2584-%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-hd%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABA0',
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alwahdahnews.net%2F62801%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABBG',
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3Dsheikh%2Bzayed%2Bmosque&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABBM',
+    'https://c4.wallpaperflare.com/wallpaper/385/633/317/4k-abu-dhabi-sheikh-zayed-mosque-wallpaper-preview.jpg',
+    'https://c4.wallpaperflare.com/wallpaper/552/88/969/mosques-sheikh-zayed-grand-mosque-wallpaper-preview.jpg',
+    'https://c4.wallpaperflare.com/wallpaper/23/331/625/abu-dhabi-sheikh-zayed-mosque-at-night-united-arab-emirates-4k-ultra-hd-tv-wallpaper-for-laptop-tablet-mobile-phones-and-desktop-3840%C3%972400-wallpaper-preview.jpg',
+    'https://c1.wallpaperflare.com/preview/518/582/454/abu-dhabi-moshe-islam-building.jpg',
+    'https://c4.wallpaperflare.com/wallpaper/521/234/415/columns-architecture-uae-the-sheikh-zayed-grand-mosque-wallpaper-preview.jpg',
+    'https://c4.wallpaperflare.com/wallpaper/79/52/988/abu-dhabi-sheikh-zayed-mosque-view-at-night-uae-4k-ultra-hd-desktop-wallpapers-for-computers-laptop-tablet-and-mobile-phones-3840%C3%972160-wallpaper-preview.jpg',
+    'https://c4.wallpaperflare.com/wallpaper/1009/1017/95/abu-dhabi-uae-grand-mosque-sheikh-zayed-hd-wallpaper-preview.jpg',
   ]
   let src = ''
   for (let i = 0; i < images.length; i++) {
