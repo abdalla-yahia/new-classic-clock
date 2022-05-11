@@ -1,0 +1,473 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+--main-color: #2196f3;
+--second-color:#e91e63;
+--therd-color:#9c27b0;
+}
+body{
+    background-color: rgb(43, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+}
+section{
+    width: 100%;
+    height: 110%;
+    background-color: #000;
+    position: absolute;
+    z-index: -1;
+    opacity: .8;
+}
+.container{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    box-shadow: inset 5px 5px 5px rgba(252, 250, 250, 0.1),
+inset  10px 10px 10px rgba(0, 0, 0, 0.1),
+inset 15px 15px 15px rgba(0, 0, 0, 0.1),
+inset 20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container .parent{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(170, 230, 173, 0.856);
+    position: relative;
+box-shadow: 5px 5px 5px rgba(252, 250, 250, 0.1),
+10px 10px 10px rgba(0, 0, 0, 0.1),
+15px 15px 15px rgba(0, 0, 0, 0.1),
+20px 20px 20px rgba(0, 0, 0, 0.1),
+inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+    margin-top: 50px;
+}
+
+.container .parent::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 183, 0);
+    top: 49%;
+    left: 48%;
+    border-radius: 50%;
+    z-index: 150;
+    box-shadow: inset 1px 1px 5px #fff;
+}
+.container .parent::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 8px dotted var(--second-color);
+    box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+inset  10px 10px 10px rgba(0, 0, 0, 0.2),
+    inset 15px 15px 15px rgba(0, 0, 0, 0.2),
+ 20px 20px 20px rgba(0, 0, 0, 0.2),
+     5px 5px 5px rgba(0, 0, 0, 0.2),
+  10px 10px 10px rgba(0, 0, 0, 0.2),
+     15px 15px 15px rgba(0, 0, 0, 0.2),
+ 20px 20px 20px rgba(0, 0, 0, 0.2),
+    inset 2px 2px 5px #fff;
+}
+.container .parent .child{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.container .parent .child .one{
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    background-color: black;
+    top: 0;
+    left: 50%;
+    box-shadow:  5px 5px 5px rgba(252, 250, 250, 0.1),
+         10px 10px 10px rgba(0, 0, 0, 0.1),
+      15px 15px 15px rgba(0, 0, 0, 0.1),
+      20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+}
+.container .parent .child .one::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    top: 98%;
+    right: -59px;
+    transform: rotate(30deg);
+}
+.container .parent .child .one::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    top: 302%;
+    right: -99px;
+    transform: rotate(57deg);
+}
+.container .parent .child .two{
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    background-color: black;
+    top: 48%;
+    right: 6px;
+    transform: rotate(90deg);
+    box-shadow: 5px 5px 5px rgba(252, 250, 250, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.1),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+}
+.container .parent .child .two::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    top: 76%;
+    right: -52px;
+    transform: rotate(25deg);
+}
+
+.container .parent .child .two::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    top: 280%;
+    right: -95px;
+    transform: rotate(57deg);
+}
+.container .parent .child .three{
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    box-shadow: 5px 5px 5px rgba(252, 250, 250, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.1),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+}
+.container .parent .child .three::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    bottom: 279%;
+    left: -102px;
+    transform: rotate(61deg);
+}
+
+.container .parent .child .three::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    bottom: 59%;
+    left: -55px;
+    transform: rotate(30deg);
+}
+.container .parent .child .four{
+    position: absolute;
+    width: 7px;
+    height: 20px;
+    background-color: black;
+    top: 48%;
+    left: 7px;
+    transform: rotate(90deg);
+    box-shadow: 5px 5px 5px rgba(252, 250, 250, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.1),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+}
+.container .parent .child .four::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    bottom: 86%;
+    left: -60px;
+    transform: rotate(30deg);
+}
+
+.container .parent .child .four::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    background-color: rgb(190, 22, 22);
+    top: -283%;
+    left: -107px;
+    transform: rotate(55deg);
+}
+.container .parent .hour {
+    width: 10px;
+    height: 70px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform-origin: bottom;
+    transform: rotate(360deg);
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2),
+    10px 10px 10px rgba(0, 0, 0, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.2),
+    20px 20px 20px rgba(0, 0, 0, 0.2),
+    inset 2px 2px 2px #FFF;
+    z-index: 10;
+}
+.container .parent .hour::before {
+content: "";
+width: 4px;
+height: 50px;
+background-color: aliceblue;
+position: absolute;
+top: 20%;
+left:25%;
+}
+.container .parent .min::before {
+content: "";
+width: 4px;
+height: 50px;
+background-color: aliceblue;
+position: absolute;
+top: 20%;
+left:25%;
+}
+
+.container .parent .min{
+    width: 10px;
+    height: 100px;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform-origin: bottom;
+    transform: rotate(360deg);
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2),
+        10px 10px 10px rgba(0, 0, 0, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.2),
+        20px 20px 20px rgba(0, 0, 0, 0.2),
+        inset 1px 2px 2px #FFF;
+        z-index: 12;
+}
+.container .parent .seco {
+
+    width: 3px;
+    height: 103px;
+    background-color: var(--therd-color);
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform-origin:bottom ;
+    transform: rotate(360deg);
+    z-index: 100;
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2),
+        10px 10px 10px rgba(0, 0, 0, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.2),
+        20px 20px 20px rgba(0, 0, 0, 0.2),
+        inset 1px 2px 2px #FFF;
+}
+
+.container .parent .parent2{
+    width: 120px;
+    height: 35px;
+    background-color: #f321bf;
+    top: 28%;
+    right: 50%;
+    position: absolute;
+    /* overflow: hidden; */
+    transform: translate(50%,-50%);
+        box-shadow:inset 5px 5px 5px rgba(252, 250, 250, 0.1),
+    inset  10px 10px 10px rgba(0, 0, 0, 0.1),
+    inset  15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset  20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset  10px 10px 10px rgba(0, 0, 0, 0.1),
+    inset  15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset  20px 20px 20px rgba(0, 0, 0, 0.1),
+        inset 1px 2px 2px #FFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    font-family:-apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+.container .parent .parent2::before {
+    content: "";
+    width: 5px;
+    height: 90%;
+    position: absolute;
+    background-color: transparent;
+    left: 30%;
+    top:10%;
+    background-image: linear-gradient(transparent 0%, transparent 20%, #03a9f4 20%, #03a9f4 40%, transparent 40% , transparent 60% , #03a9f4 60% , #03a9f4 80%, transparent 80%);
+
+}
+.container .parent .parent2::after {
+content: "";
+width: 5px;
+height: 90%;
+position: absolute;
+background-color: transparent;
+right: 30%;
+top:10%;
+background-image: linear-gradient(transparent 0%, transparent 20%, #03a9f4 20%, #03a9f4 40%, transparent 40%, transparent 60%, #03a9f4 60%, #03a9f4 80%, transparent 80%);
+animation: mov 1s infinite ;
+} 
+@keyframes mov {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.container .parent .parent2 .dh {
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    font-weight: 500;
+    width: 40px;
+}
+.container .parent .parent2 .dm {
+        color: white;
+    font-size: 27px;
+    text-align: center;
+    font-weight: 500;
+    width: 40px;
+}
+.container .parent .parent2 .ds {
+    color: #504f4f;
+    font-size: 27px;
+    text-align: center;
+    font-weight: 500;
+    width: 40px;
+}
+.container .parent .parent3{
+    width: 120px;
+    height: 35px;
+    background-color: #f321bf;
+    bottom: 10%;
+    right: 50%;
+    position: absolute;
+    transform: translate(50%,-50%);
+        box-shadow:inset 5px 5px 5px rgba(252, 250, 250, 0.1),
+    inset  10px 10px 10px rgba(0, 0, 0, 0.1),
+    inset  15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset  20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset  10px 10px 10px rgba(0, 0, 0, 0.1),
+    inset  15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset  20px 20px 20px rgba(0, 0, 0, 0.1),
+        inset 1px 2px 2px #FFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    color: white;
+}
+.container .parent .catina{
+    position: absolute;
+    width: 10px;
+    height: 250px;
+    background-color: var(--second-color);
+    top: 100%;
+    left: 50%;
+    transform-origin: top;
+    transform: rotate(-5deg);
+    box-shadow: 5px 5px 5px rgba(252, 250, 250, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.1),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 20px 20px rgba(0, 0, 0, 0.1),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+    animation: tr 1s infinite linear alternate;
+}
+
+.container .parent .catina::after {
+content: "";
+width: 50px;
+height: 55px;
+background-color: inherit;
+position: absolute;
+bottom:0;
+border-radius: 50%;
+left: 50%;
+transform: translate(-50%);
+box-shadow: 5px 5px 5px rgba(252, 250, 250, 0.1),
+10px 10px 10px rgba(0, 0, 0, 0.1),
+15px 15px 15px rgba(0, 0, 0, 0.1),
+20px 20px 20px rgba(0, 0, 0, 0.1),
+inset 2px 2px 2px rgba(255, 255, 255, 0.637);
+}
+
+@keyframes tr{
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(-10deg);
+    }
+}
+
+.footer{
+    color: #e91e63;
+    position: absolute;
+    bottom: 30px;
+    font-size: large;
+    font-weight: 700;
+    height: 30px;
+}
