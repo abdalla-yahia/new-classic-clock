@@ -95,13 +95,13 @@ function changeColor() {
 
 function changeBackground() {
   let images = [
-    '/image/0 (1).jpg',
-    '/image/0 (2).jpg',
-    '/image/0 (3).jpg',
-    '/image/0 (4).jpg',
-    '/image/0 (5).jpg',
-    '/image/0 (6).jpg',
-    '/image/0 (7).jpg',
+    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mexatk.com%2F%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-%25D8%25A7%25D8%25AD%25D9%2584%25D9%258A-%25D9%2588%25D8%25A7%25D8%25AC%25D9%2585%25D9%2584-%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-hd%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAD',
+    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fgfx4arab.com%2Fdownload%2Fmosque-%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25AC%25D8%25AF-%25D8%25AF%25D9%2582%25D8%25A9-%25D8%25B9%25D8%25A7%25D9%2584%25D9%258A%25D8%25A9-%25D8%25AC%25D9%2585%25D9%258A%25D9%2584-%25D8%25B1%25D8%25A7%25D8%25A6%25D8%25B9-%25D8%25AD%25D8%25AF%25D9%258A%25D8%25AB%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAc',
+    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mexatk.com%2F%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-%25D8%25A7%25D8%25AD%25D9%2584%25D9%258A-%25D9%2588%25D8%25A7%25D8%25AC%25D9%2585%25D9%2584-%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-hd%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAo',
+    'https://www.google.com/url?sa=i&url=https%3A%2F%2Far.wikipedia.org%2Fwiki%2F%25D9%2585%25D9%2584%25D9%2581%3AAl-Hakim_Mosque.jpg&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABAu',
+    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mexatk.com%2F%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-%25D8%25A7%25D8%25AD%25D9%2584%25D9%258A-%25D9%2588%25D8%25A7%25D8%25AC%25D9%2585%25D9%2584-%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25A7%25D8%25AC%25D8%25AF-hd%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABA0',
+    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alwahdahnews.net%2F62801%2F&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABBG',
+    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3Dsheikh%2Bzayed%2Bmosque&psig=AOvVaw28GUkPieOrJo3x0GSUuNJr&ust=1652391113104000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC5t96y2PcCFQAAAAAdAAAAABBM',
   ]
   let src = ''
   for (let i = 0; i < images.length; i++) {
@@ -110,6 +110,9 @@ function changeBackground() {
   return src
 }
 
-document.getElementsByTagName('div')[0].style.backgroundImage = `url('${changeBackground()}')`;
-document.getElementsByTagName('body')[0].style.backgroundImage = `url('${changeBackground()}')`;
-
+document.getElementsByTagName(
+  'div',
+)[0].style.backgroundImage = `url('${changeBackground()}')`
+document.getElementsByTagName(
+  'body',
+)[0].style.backgroundImage = `url('${changeBackground()}')`
